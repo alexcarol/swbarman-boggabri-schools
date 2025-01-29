@@ -1,0 +1,35 @@
+
+.ai-upcoming-events-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ai-upcoming-events > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.ai-upcoming-events-wrapper h2 {
+  margin-right: 5px; /* Reduce space between the title and the button */
+  font-size: var(--heading-font-size-xl); /* Ensure the font size matches */
+}
+
+.ai-upcoming-events-wrapper .button-container {
+  /* Optional: Add any styling for the button container if needed */
+}
+
+.ai-upcoming-events-wrapper .button {
+  background-color: transparent !important; /* Remove the background color */
+  border: 1px solid var(--link-color) !important; /* Add a border with the desired color */
+  color: var(--link-color) !important; /* Change the text color to match the border */
+  padding: 3px 8px !important; /* Adjust the padding for the button to make it more compact */
+  text-decoration: none !important; /* Remove the underline from the link */
+  border-radius: 3px !important; /* Reduce border-radius to match the original */
+  max-width: none !important; /* Ensure the button width does not exceed its content */
+  line-height: normal !important; /* Ensure the line height is normal */
+  display: inline-block; /* Ensure button is inline with text */
+  vertical-align: middle; /* Align button vertically in the middle */
+  font-size: inherit !important; /* Ensure font size matches the surrounding text */
+}
