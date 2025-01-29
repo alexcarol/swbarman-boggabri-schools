@@ -1,0 +1,60 @@
+
+.ai-banner-wrapper {
+  border: 1px solid #000080; /* Dark blue border */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ai-banner > div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.ai-banner > div > div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.ai-banner > div > div::before {
+  content: url('path/to/your/icon.png'); /* Replace with actual icon path */
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+#view-our-latest-newsletter {
+  margin: 0;
+  font-size: 16px; /* Adjusted font size */
+  color: black; /* Changed color to black */
+  flex-grow: 1;
+}
+
+#view-our-latest-newsletter a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Ensure the color is black */
+}
+
+#view-our-latest-newsletter a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.button-container {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.ai-banner-container > .ai-banner-wrapper > .block.ai-banner .button {
+  background: none;
+  color: black; /* Ensure the color is black */
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0;
+}
