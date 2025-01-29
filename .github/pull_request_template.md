@@ -4,4 +4,4 @@ Fix #<gh-issue-id>
 
 Test URLs:
 - Before: https://main--swbarman-boggabri-schools--aemdemos.aem.live/
-- After: https://<branch>--swbarman-boggabri-schools--aemdemos.aem.live/
+- After: https://main--swbarman-boggabri-schools--aemdemos.aem.live/
