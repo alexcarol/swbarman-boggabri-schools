@@ -3,5 +3,5 @@ Please always provide the [GitHub issue(s)](../issues) your PR is for, as well a
 Fix #<gh-issue-id>
 
 Test URLs:
-- Before: https://main--swbarman-boggabri-schools--aemdemos.aem.live/
-- After: https://main--swbarman-boggabri-schools--aemdemos.aem.live/
+- Before: https://main--swbarman-boggabri-schools--alexcarol.aem.live/
+- After: https://main--swbarman-boggabri-schools--alexcarol.aem.live/
