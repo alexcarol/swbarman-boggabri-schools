@@ -1,33 +1,88 @@
-.ai-footer-links > div {
-  display: flex;
-  flex-direction: column;
+
+.ai-footer-links-wrapper {
+  background-color: #e0e0e0; /* Light gray background */
+  padding: 20px; /* Padding around the content */
 }
 
-.ai-footer-links img {
+.ai-footer-links {
+  display: flex;
+  align-items: flex-start; /* Align items to the start */
+  justify-content: space-between; /* Distribute space between items */
   width: 100%;
 }
 
+.ai-footer-links > div {
+  display: flex;
+  flex-direction: row; /* Ensure horizontal alignment */
+  align-items: flex-start; /* Align items to the start */
+  justify-content: space-between; /* Distribute space between items */
+  width: 100%;
+}
+
+.ai-footer-links-img-col {
+  display: flex;
+  align-items: center; /* Center the items vertically */
+  margin-right: 20px; /* Space between the logo and the text column */
+}
+
+.ai-footer-links-img-col p {
+  display: flex;
+  align-items: center;
+}
+
+.ai-footer-links-img-col img {
+  margin-right: 10px; /* Space between the image and the text */
+  width: auto; /* Ensure the image does not stretch */
+  height: auto; /* Maintain the image aspect ratio */
+}
+
 .ai-footer-links > div > div {
-  order: 1;
+  display: flex;
+  flex-direction: row; /* Ensure horizontal alignment of link groups */
+  gap: 20px;
+  width: 100%;
 }
 
-.ai-footer-links > div > .ai-footer-links-img-col {
-  order: 0;
+.ai-footer-links h2 {
+  margin-bottom: 10px; /* Space between the heading and the list */
+  width: 100%; /* Ensure heading spans full width */
 }
 
-.ai-footer-links > div > .ai-footer-links-img-col img {
-  display: block;
+.ai-footer-links ul {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  flex-direction: row; /* Ensure horizontal alignment of link groups */
+  flex-wrap: wrap;
+  gap: 20px; /* Space between columns */
+  width: 100%;
 }
 
-@media (width >= 900px) {
+.ai-footer-links li {
+  flex: 1 1 20%; /* Ensure each link takes up equal space */
+  margin-bottom: 5px; /* Space between list items */
+}
+
+@media (min-width: 900px) {
   .ai-footer-links > div {
-    align-items: center;
-    flex-direction: unset;
-    gap: 24px;
+    flex-direction: row; /* Ensure horizontal alignment on larger screens */
+    align-items: flex-start; /* Align items to the start */
+    gap: 20px; /* Space between columns */
   }
 
   .ai-footer-links > div > div {
     flex: 1;
-    order: unset;
+    margin-right: 20px; /* Ensure spacing between columns */
+  }
+
+  .ai-footer-links ul {
+    flex-direction: row; /* Ensure horizontal alignment of link groups on larger screens */
+    flex-wrap: wrap;
+  }
+
+  .ai-footer-links li {
+    width: 20%; /* Ensure each link takes up equal width */
+    margin-bottom: 5px; /* Space between list items */
   }
 }
