@@ -1,0 +1,87 @@
+
+/* Outer Container Styling */
+.ai-image-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align items to the start */
+  margin: 20px; /* Add some margin for spacing */
+}
+
+/* Title and Button Container */
+.ai-image-wrapper > .ai-image > div {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align items to the start */
+}
+
+.ai-image-wrapper > .ai-image > div > div {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align items to the start */
+}
+
+.ai-image-wrapper > .ai-image > div > div > h2 {
+  margin-bottom: 10px; /* Add spacing below the title */
+}
+
+.ai-image-wrapper > .ai-image > div > div > .button-container:first-of-type {
+  margin-bottom: 20px; /* Add spacing below the first button container */
+}
+
+/* Hide additional buttons */
+.ai-image-wrapper > .ai-image > div > div > .button-container:nth-of-type(n+2) {
+  display: none; /* Hide additional buttons */
+}
+
+/* Image Container Styling */
+.ai-image-wrapper > .ai-image > div > div > p:nth-of-type(4) {
+  display: flex;
+  align-items: flex-end; /* Align items to the bottom */
+  justify-content: space-between; /* Space between elements */
+  width: 100%; /* Set width to 100% of the container */
+  height: auto; /* Set height to auto */
+  background-color: #00205b; /* Background color to match the image placeholder */
+  padding: 20px; /* Add padding inside the container */
+  position: relative; /* Relative positioning for absolute elements */
+  aspect-ratio: 16/9; /* Maintain aspect ratio */
+}
+
+/* Bottom-left Text Styling */
+.ai-image-wrapper > .ai-image > div > div > p:nth-of-type(4) > a:first-of-type {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white; /* Set the text color */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+/* Bottom-right Icon and Number Styling */
+.ai-image-wrapper > .ai-image > div > div > p:nth-of-type(4) > a:last-of-type {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white; /* Set the text color */
+  text-decoration: none; /* Remove underline from the link */
+  display: flex;
+  align-items: center; /* Align icon and text */
+}
+
+.ai-image-wrapper > .ai-image > div > div > p:nth-of-type(4) > a:last-of-type img {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+/* Ensure the text "School photos 2018" is included in the image container */
+.ai-image-wrapper > .ai-image > div > div > p:nth-of-type(4)::before {
+  content: 'School photos 2018';
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white; /* Set the text color */
+  font-size: 16px; /* Set the font size */
+  text-decoration: none; /* Remove underline from the text */
+}
+
+/* Hide the last button */
+.ai-image-wrapper > .ai-image > div > div > p:nth-of-type(5) {
+  display: none; /* Hide the last button */
+}
