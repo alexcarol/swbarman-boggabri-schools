@@ -4,8 +4,8 @@ This is a project created by AEMY.
 
 ## Environments
 
-- Preview: https://main--swbarman-boggabri-schools--aemdemos.aem.page/
-- Live: https://main--swbarman-boggabri-schools--aemdemos.aem.live/
+- Preview: https://main--swbarman-boggabri-schools--alexcarol.aem.page/
+- Live: https://main--swbarman-boggabri-schools--alexcarol.aem.live/
 
 ## Installation
 
