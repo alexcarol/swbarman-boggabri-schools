@@ -1,0 +1,51 @@
+
+.ai-social-media-wrapper > .ai-social-media > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.ai-social-media-wrapper > .ai-social-media > div > div > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.ai-social-media-wrapper > .ai-social-media > div > div > ul > li {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 16px;
+  box-sizing: border-box;
+  flex: 1 1 calc(50% - 16px); /* Two items per row */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Grouping the items into card-like structures */
+.ai-social-media-wrapper > .ai-social-media > div > div > ul > li:nth-child(6n+1), /* Title */
+.ai-social-media-wrapper > .ai-social-media > div > div > ul > li:nth-child(6n+2), /* Date */
+.ai-social-media-wrapper > .ai-social-media > div > div > ul > li:nth-child(6n+3), /* Description */
+.ai-social-media-wrapper > .ai-social-media > div > div > ul > li:nth-child(6n+4), /* Video Link */
+.ai-social-media-wrapper > .ai-social-media > div > div > ul > li:nth-child(6n+5), /* Second Title */
+.ai-social-media-wrapper > .ai-social-media > div > div > ul > li:nth-child(6n+6) /* Second Date */
+{
+  flex: 1 1 100%; /* Make these elements span the full width */
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ai-social-media-wrapper > .ai-social-media > div > div > ul > li em,
+.ai-social-media-wrapper > .ai-social-media > div > div > ul > li a {
+  display: block;
+  margin-top: 8px;
+}
+
+.ai-social-media-wrapper > .ai-social-media > div > div > ul > li img {
+  width: 100%;
+  height: auto;
+  margin-top: 8px;
+}
