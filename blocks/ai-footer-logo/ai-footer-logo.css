@@ -1,32 +1,79 @@
-.ai-footer-logo > div {
+
+/* Scoped CSS for the footer block */
+.ai-footer-logo-wrapper {
+  background-color: #e5e5e5; /* Light grey background color */
+  padding: 20px;
+}
+
+/* Main container for the footer content */
+.ai-footer-logo {
+  display: flex; /* Use flexbox to align child elements side-by-side */
+  justify-content: space-between; /* Space between the sections */
+  align-items: flex-start; /* Align items to the start vertically */
+  flex-direction: row; /* Ensure the flex direction is row */
+}
+
+/* First div containing the title and contact information */
+.ai-footer-logo > div:first-child {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack elements vertically within the first section */
+  flex: 1; /* Take up available space */
+  margin-right: 20px; /* Space between the text and the logo */
 }
 
+/* Nested divs inside the first section */
+.ai-footer-logo > div:first-child > div {
+  display: flex;
+  flex-direction: row; /* Ensure the flex direction is row for nested elements */
+  flex-wrap: wrap; /* Allow wrapping of elements */
+  width: 100%; /* Ensure each nested div takes full width */
+  margin-bottom: 20px; /* Increase space between elements */
+}
+
+/* Second div containing the logo */
+.ai-footer-logo > div:last-child {
+  flex: 0 0 auto; /* Take only the required space */
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+  align-items: center; /* Center the logo vertically */
+}
+
+/* Style the social media links to be displayed horizontally */
+#social-media-links + ul {
+  display: flex;
+  flex-direction: row; /* Ensure the flex direction is row for social media links */
+  gap: 10px; /* Space between the social media icons */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* General styling for links and icons */
+ul li a {
+  text-decoration: none;
+  color: #000; /* Black text color for links */
+}
+
+ul li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Ensure the image does not stretch across the entire block */
 .ai-footer-logo img {
-  width: 100%;
+  width: auto; /* Ensure the image retains its aspect ratio */
+  max-width: 219px; /* Limit the maximum width of the image */
+  height: auto; /* Ensure the height adjusts based on the width */
 }
 
-.ai-footer-logo > div > div {
-  order: 1;
-}
-
-.ai-footer-logo > div > .ai-footer-logo-img-col {
-  order: 0;
-}
-
-.ai-footer-logo > div > .ai-footer-logo-img-col img {
-  display: block;
-}
-
-@media (width >= 900px) {
-  .ai-footer-logo > div {
-    align-items: center;
-    flex-direction: unset;
+/* Adjust media query for larger screens */
+@media (min-width: 900px) {
+  .ai-footer-logo {
+    align-items: flex-start; /* Align items to the start vertically */
+    flex-direction: row; /* Ensure the flex direction is row */
     gap: 24px;
   }
 
-  .ai-footer-logo > div > div {
+  .ai-footer-logo > div {
     flex: 1;
     order: unset;
   }
