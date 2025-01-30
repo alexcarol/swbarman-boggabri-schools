@@ -1,0 +1,38 @@
+
+.ai-footer-banner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #e0e0e0; /* Light grey background for the whole wrapper */
+  padding: 10px 0; /* Adjust padding to center content vertically */
+}
+
+.ai-footer-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #e0e0e0; /* Light grey background for the banner */
+  padding: 10px 0; /* Add padding to ensure proper vertical alignment */
+}
+
+.ai-footer-banner > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center text horizontally */
+  width: 100%;
+}
+
+.ai-footer-banner > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.ai-footer-banner p {
+  margin: 0; /* Remove default margin */
+}
