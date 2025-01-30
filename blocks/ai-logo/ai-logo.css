@@ -1,0 +1,53 @@
+
+.ai-logo-wrapper {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+}
+
+.ai-logo > div > div {
+  display: flex;
+  flex-direction: row; /* Ensure elements are side by side */
+  align-items: center; /* Vertically center the items within the inner container */
+}
+
+.ai-logo > div > div > picture {
+  margin-right: 20px; /* Adds some space between the image and the text */
+  flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+.ai-logo > div > div > div {
+  display: flex;
+  flex-direction: column; /* Align text elements vertically */
+}
+
+.ai-logo > div > div > div > h1,
+.ai-logo > div > div > div > p {
+  margin: 0; /* Removes default margins */
+}
+
+#boggabri-public-school {
+  font-size: 24px; /* Adjust the size as needed */
+  font-weight: bold;
+}
+
+.ai-logo > div > div > div > p:nth-of-type(1) {
+  font-size: 14px; /* Adjust the size as needed */
+  margin-top: 5px;
+}
+
+.ai-logo > div > div > div > p:nth-of-type(2),
+.ai-logo > div > div > div > p:nth-of-type(3) {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* New CSS for wrapping text elements correctly */
+.ai-logo > div > div > div > p {
+  display: block; /* Ensure text elements take the full width available */
+  margin-top: 5px; /* Add margin between text elements */
+}
+
+/* Add some additional spacing */
+.ai-logo > div > div > div > p + p {
+  margin-top: 10px; /* Add more spacing between subsequent paragraphs */
+}
