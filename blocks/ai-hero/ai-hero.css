@@ -1,0 +1,32 @@
+
+.ai-hero-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto; /* Ensure the height is auto to maintain aspect ratio */
+    overflow: hidden;
+    max-width: unset; /* Ensure full width */
+    padding: 0; /* Remove any padding */
+}
+
+.ai-hero {
+    flex: 1;
+    position: relative;
+}
+
+.ai-hero > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto; /* Set height to auto to prevent unnecessary stretching */
+    flex-direction: row; /* Ensure elements are side by side */
+}
+
+.ai-hero picture,
+.ai-hero img {
+    width: 100%;
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container */
+}
